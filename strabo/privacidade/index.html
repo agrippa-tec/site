@@ -15,7 +15,7 @@
   <a href="/"><img class="logo" src="/assets/agrippa-oficial-esc-trim.png" alt="Agrippa Tec"></a>
   <nav>
     <a href="/strabo/">Strabo</a>
-    <a href="mailto:agrippatec@gmail.com">Suporte</a>
+    <a class="mail" data-u="suporte" data-d="agrippa.tec.br">Suporte</a>
   </nav>
 </header>
 
@@ -82,7 +82,7 @@ a data atualizada.</p>
 
 <h2>9. Contato</h2>
 <p>Dúvidas sobre privacidade:
-<a href="mailto:agrippatec@gmail.com">agrippatec@gmail.com</a></p>
+<a class="mail" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [arroba] agrippa.tec.br</a></p>
 
 <p class="muted">Agrippa Tec · Brasil · <a href="/strabo/">strabo</a></p>
 </article>
@@ -94,6 +94,14 @@ a data atualizada.</p>
   <p><strong>Strabo</strong> · um produto Agrippa Tec</p>
   <p class="legal">© 2026 Agrippa Tec · Brasil</p>
 </footer>
+
+<script>
+document.querySelectorAll('a.mail').forEach(a => {
+  const m = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + m;
+  if ('txt' in a.dataset) a.textContent = m;
+});
+</script>
 
 </body>
 </html>

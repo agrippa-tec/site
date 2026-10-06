@@ -24,7 +24,7 @@
   <nav>
     <a href="/es/#produtos">Productos</a>
     <a href="/strabo/privacidade/">Privacidad</a>
-    <a href="mailto:agrippatec@gmail.com">Soporte</a>
+    <a class="mail" data-u="suporte" data-d="agrippa.tec.br">Soporte</a>
     <span class="langs"><a href="/strabo/">PT</a>·<a href="/en/strabo/">EN</a>·<a class="on" href="/es/strabo/">ES</a></span>
   </nav>
 </header>
@@ -100,7 +100,7 @@
   </div>
   <p style="margin-top:28px"><a href="/strabo/privacidade/">Política de
   Privacidad</a> · Soporte:
-  <a href="mailto:agrippatec@gmail.com">agrippatec@gmail.com</a></p>
+  <a class="mail" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [arroba] agrippa.tec.br</a></p>
 </div>
 </section>
 
@@ -121,6 +121,11 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
 } else {
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
 }
+document.querySelectorAll('a.mail').forEach(a => {
+  const m = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + m;
+  if ('txt' in a.dataset) a.textContent = m;
+});
 </script>
 
 </body>

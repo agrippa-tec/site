@@ -24,7 +24,7 @@
   <nav>
     <a href="#produtos">Productos</a>
     <a href="#empresa">La empresa</a>
-    <a href="mailto:agrippatec@gmail.com">Contacto</a>
+    <a class="mail" data-u="suporte" data-d="agrippa.tec.br">Contacto</a>
     <span class="langs"><a href="/">PT</a>·<a href="/en/">EN</a>·<a class="on" href="/es/">ES</a></span>
   </nav>
 </header>
@@ -120,15 +120,14 @@
 
   <div class="name-story" style="margin-top:56px">
     <p class="kicker reveal">El nombre</p>
-    <h2 class="disp reveal">Construido para durar dos mil años</h2>
+    <h2 class="disp reveal">Agripa hizo esto</h2>
     <p class="lead reveal">Agripa dio agua gratis a Roma, abrió la red
     de caminos de la Galia, venció la mayor batalla naval de la
     Antigüedad por la logística y resumió el mundo entero en un mapa
     colgado ante el público: la información dispersa del imperio
     convirtiéndose en una imagen que cualquiera leía. Él no era de
-    discurso, era de obra. Y firmaba: <b>M·AGRIPPA·FECIT</b>, "Agripa
-    hizo esto", aún en la fachada del Panteón, bajo la mayor cúpula de
-    hormigón del mundo.</p>
+    discurso, era de obra. Y firmaba: <b>M·AGRIPPA·FECIT</b>, aún en la
+    fachada del Panteón, bajo la mayor cúpula de hormigón del mundo.</p>
     <p class="reveal">La empresa lleva el nombre porque trabaja como él
     trabajaba: reúne la información dispersa y la devuelve resumida en
     una respuesta para quien decide. Con el nombre debajo.</p>
@@ -139,7 +138,7 @@
 <footer id="contato">
   <img class="mark" src="/assets/agrippa-oficial-cla-trim.png" alt="Agrippa Tec">
   <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
-  <p>Contacto: <a href="mailto:agrippatec@gmail.com">agrippatec@gmail.com</a></p>
+  <p>Contacto: <a class="mail" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [arroba] agrippa.tec.br</a></p>
   <p class="legal">© 2026 Agrippa Tec · Brasil · <a href="/strabo/privacidade/" style="color:#8C8578">Privacidad — Strabo</a></p>
 </footer>
 
@@ -153,6 +152,11 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
 } else {
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
 }
+document.querySelectorAll('a.mail').forEach(a => {
+  const m = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + m;
+  if ('txt' in a.dataset) a.textContent = m;
+});
 </script>
 
 </body>

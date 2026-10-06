@@ -24,7 +24,7 @@
   <nav>
     <a href="#produtos">Produtos</a>
     <a href="#empresa">A empresa</a>
-    <a href="mailto:agrippatec@gmail.com">Contato</a>
+    <a class="mail" data-u="suporte" data-d="agrippa.tec.br">Contato</a>
     <span class="langs"><a class="on" href="/">PT</a>·<a href="/en/">EN</a>·<a href="/es/">ES</a></span>
   </nav>
 </header>
@@ -119,14 +119,14 @@
 
   <div class="name-story" style="margin-top:56px">
     <p class="kicker reveal">O nome</p>
-    <h2 class="disp reveal">Construído pra durar dois mil anos</h2>
+    <h2 class="disp reveal">Agripa fez isso</h2>
     <p class="lead reveal">Agripa deu água de graça a Roma, abriu a
     rede de estradas da Gália, venceu a maior batalha naval da
     Antiguidade pela logística e resumiu o mundo inteiro num mapa
     pendurado ao público: a informação espalhada do império virando uma
     imagem que qualquer um lia. Ele não era de discurso, era de obra. E
-    assinava: <b>M·AGRIPPA·FECIT</b>, "Agripa fez isso", ainda na
-    fachada do Panteão, sob a maior cúpula de concreto do mundo.</p>
+    assinava: <b>M·AGRIPPA·FECIT</b>, ainda na fachada do Panteão, sob
+    a maior cúpula de concreto do mundo.</p>
     <p class="reveal">A empresa leva o nome porque trabalha como ele
     trabalhava: reúne a informação espalhada e devolve resumida numa
     resposta pra quem decide. Com o nome embaixo.</p>
@@ -137,7 +137,7 @@
 <footer id="contato">
   <img class="mark" src="/assets/agrippa-oficial-cla-trim.png" alt="Agrippa Tec">
   <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
-  <p>Contato: <a href="mailto:agrippatec@gmail.com">agrippatec@gmail.com</a></p>
+  <p>Contato: <a class="mail" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [arroba] agrippa.tec.br</a></p>
   <p class="legal">© 2026 Agrippa Tec · Brasil · <a href="/strabo/privacidade/" style="color:#8C8578">Privacidade — Strabo</a></p>
 </footer>
 
@@ -151,6 +151,11 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
 } else {
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
 }
+document.querySelectorAll('a.mail').forEach(a => {
+  const m = a.dataset.u + '@' + a.dataset.d;
+  a.href = 'mailto:' + m;
+  if ('txt' in a.dataset) a.textContent = m;
+});
 </script>
 
 </body>
