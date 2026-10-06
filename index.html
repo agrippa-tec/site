@@ -5,16 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agrippa Tec — tecnologia para o agronegócio</title>
 <meta name="description" content="Empresa brasileira que transforma sensoriamento remoto, dados públicos, o conhecimento de quem trabalha a terra e o conhecimento técnico-científico em resposta pra quem decide.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Agrippa Tec — tecnologia para o agronegócio">
+<meta property="og:description" content="Informação de satélite, ciência e campo virando resposta sobre a sua terra.">
+<meta property="og:image" content="https://agrippa.tec.br/assets/agrippa-tec-oficial-pedra.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#213E24">
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" href="/assets/agrippa-tec-oficial-pedra.png">
 </head>
 <body>
 
 <header>
-  <a href="/"><img class="logo" src="/assets/agrippa-tec-linha-marcas-escuras.png" alt="Agrippa Tec"></a>
+  <a href="/" aria-label="Agrippa Tec — início"><img class="logo" src="/assets/agrippa-linha-esc-trim.png" alt="Agrippa Tec"></a>
   <nav>
     <a href="#produtos">Produtos</a>
     <a href="#empresa">A empresa</a>
@@ -23,51 +25,123 @@
 </header>
 
 <section class="hero">
-  <img src="/assets/agrippa-tec-oficial-pedra.png" alt="AGRIPPA TEC">
-  <h1 class="cinzel">TECNOLOGIA PARA O AGRONEGÓCIO</h1>
+  <img class="seal" src="/assets/agrippa-tec-oficial-pedra.png" alt="AGRIPPA TEC">
+  <h1 class="disp">TECNOLOGIA PARA O<br>AGRONEGÓCIO</h1>
+  <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
   <p>Transformamos sensoriamento remoto, dados públicos, o conhecimento
   de quem trabalha a terra e o conhecimento técnico-científico em
   resposta pra quem decide.</p>
+  <a class="cta" href="#produtos">Conhecer os produtos</a>
 </section>
 
-<div class="wrap" id="produtos">
-  <h2 class="cinzel">Produtos</h2>
+<section>
+<div class="wrap">
+  <p class="kicker reveal">De onde vem a resposta</p>
+  <h2 class="disp reveal">Quatro fontes, uma resposta</h2>
+  <div class="sources">
+    <div class="src reveal"><b><i>▾</i>Sensoriamento remoto</b>
+      <span>Satélites, focos de calor, chuva e vegetação — lidos sem sair do escritório.</span></div>
+    <div class="src reveal"><b><i>▾</i>Dados públicos</b>
+      <span>CAR, SIGEF, INCRA, IBGE — a base oficial do território brasileiro.</span></div>
+    <div class="src reveal"><b><i>▾</i>Quem trabalha a terra</b>
+      <span>A observação de quem está no campo entra no produto e melhora o modelo.</span></div>
+    <div class="src reveal"><b><i>▾</i>Conhecimento técnico-científico</b>
+      <span>Ciência e campo em via de mão dupla — um alimenta o outro.</span></div>
+  </div>
+  <p class="flow-arrow reveal">Tudo isso vira <b>um alerta, um laudo,
+  um número por talhão</b> — sobre um pedaço de terra real.</p>
+</div>
+</section>
+
+<section id="produtos" style="background:var(--marfim)">
+<div class="wrap">
+  <p class="kicker reveal">Produtos</p>
+  <h2 class="disp reveal">Uma pergunta, uma resposta</h2>
   <div class="cards">
-    <a class="card" href="/strabo/">
-      <span class="tag">Disponível em breve</span>
-      <h3>Strabo</h3>
+    <a class="card reveal" href="/strabo/">
+      <div class="head">
+        <img src="/assets/strabo-S1-verde.png" alt="Ícone do Strabo">
+        <h3>STRABO</h3>
+      </div>
+      <span class="tag">Em breve nas lojas</span>
       <p>O "onde estou no mapa" de bolso. Abre GeoPDF direto do WhatsApp,
       mostra sua posição em segundos e funciona 100% offline — pinos,
       medições, trilhas GPS e exportação profissional.</p>
+      <span class="go">Ver o Strabo →</span>
     </a>
-    <a class="card" href="#contato">
+    <div class="card reveal" style="cursor:default">
+      <div class="head">
+        <div style="width:52px;height:52px;border-radius:13px;background:var(--verde);display:grid;place-items:center;color:var(--marfim);font-family:var(--disp);font-size:1.4rem">A</div>
+        <h3>ARGOS</h3>
+      </div>
       <span class="tag">Em construção</span>
-      <h3>Argos</h3>
       <p>O vigia que avisa antes do fogo chegar. Alertas progressivos por
-      distância sobre focos de queimada perto da sua área.</p>
-    </a>
+      distância sobre focos de queimada perto da sua área — direto no
+      celular.</p>
+    </div>
   </div>
 </div>
+</section>
 
-<div class="wrap" id="empresa">
-  <h2 class="cinzel">A empresa</h2>
-  <p class="lead">Todo produto Agrippa fala de um pedaço de terra — um
-  alerta, um laudo, um número por talhão. Mais simples e mais barato que
-  a informação que hoje só existe cara, complexa ou trancada em
-  consultoria.</p>
-  <p>O nome é o compromisso: Agripa foi o engenheiro que transformou a
-  ambição de Roma em obra — os aquedutos, a vitória de Áccio, o primeiro
-  mapa do mundo medido, e o Panteão assinado <em>M·AGRIPPA·FECIT</em>,
-  "Agripa fez isso". Strabo foi quem escreveu: o mapa se perdeu, a
-  descrição durou dois mil anos. Construir e registrar são o mesmo ato —
-  é o que a empresa assina embaixo de cada produto.</p>
+<section id="empresa">
+<div class="wrap">
+  <p class="kicker reveal">A empresa</p>
+  <h2 class="disp reveal">O que todo produto Agrippa garante</h2>
+  <ol class="principles">
+    <li class="reveal"><div><b>Resposta sobre a sua terra.</b>
+      Todo produto fala de um lugar real — talhão, fazenda, gleba.</div></li>
+    <li class="reveal"><div><b>Ciência e campo, via de mão dupla.</b>
+      O conhecimento técnico-científico cruza com o de quem trabalha a
+      terra. Nem tudo tá publicado — por isso os dois lados contam.</div></li>
+    <li class="reveal"><div><b>Inteligência artificial dentro.</b>
+      IA não é propaganda, é tecido — permeia a empresa e enxerga padrão
+      que nenhum humano vê.</div></li>
+    <li class="reveal"><div><b>Facilidade é o produto.</b>
+      A complexidade existe, mas você vê só a resposta. Se precisa de
+      manual, tá errado.</div></li>
+    <li class="reveal"><div><b>Uma pergunta, uma resposta.</b>
+      Cada produto resolve uma coisa de verdade.</div></li>
+    <li class="reveal"><div><b>Honestidade de dado.</b>
+      Mostra o que foi medido ou diz que não sabe — nunca supõe em seu
+      nome.</div></li>
+  </ol>
+
+  <div class="name-story" style="margin-top:56px">
+    <p class="kicker reveal">O nome</p>
+    <h2 class="disp reveal">Construir e registrar são o mesmo ato</h2>
+    <p class="lead reveal">Agripa foi o engenheiro que transformou a
+    ambição de Roma em obra — os aquedutos, a vitória de Áccio pela
+    logística, o primeiro mapa do mundo medido. Strabo foi quem o
+    escreveu: o mapa se perdeu, a descrição durou dois mil anos.</p>
+    <blockquote class="reveal">M·AGRIPPA·FECIT
+      <small>"Agripa fez isso" — a inscrição do Panteão, em pé até hoje.
+      É a assinatura que a empresa carrega embaixo de cada produto.</small>
+    </blockquote>
+    <p class="reveal">A Agrippa constrói software que funciona onde a obra
+    acontece — no mato, no celular barato, sem sinal. E registra tudo,
+    porque o que não se escreve se perde.</p>
+  </div>
 </div>
+</section>
 
 <footer id="contato">
-  <p><strong>Agrippa Tec</strong> · tecnologia para o agronegócio</p>
+  <img class="mark" src="/assets/agrippa-linha-cla-trim.png" alt="Agrippa Tec">
+  <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
   <p>Contato: <a href="mailto:agrippatec@gmail.com">agrippatec@gmail.com</a></p>
-  <p style="margin-top:10px">© 2026 Agrippa Tec · Brasil</p>
+  <p class="legal">© 2026 Agrippa Tec · Brasil · <a href="/strabo/privacidade/" style="color:#8C8578">Privacidade — Strabo</a></p>
 </footer>
+
+<script>
+document.documentElement.classList.add('js');
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+}
+</script>
 
 </body>
 </html>
