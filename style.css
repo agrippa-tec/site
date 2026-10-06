@@ -62,7 +62,7 @@ header::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -1px;
   height: 1px; background: var(--terracota); opacity: .55;
 }
-header img.logo { height: 34px; width: auto; display: block; }
+header img.logo { height: 42px; width: auto; display: block; }
 nav { display: flex; gap: 26px; }
 nav a {
   color: var(--verde); text-decoration: none;
@@ -334,7 +334,7 @@ footer::before {
   background-image: var(--grain); opacity: .4; pointer-events: none;
 }
 footer > * { position: relative; }
-footer img.mark { height: 44px; opacity: .9; margin-bottom: 18px; }
+footer img.mark { height: 58px; opacity: .95; margin-bottom: 18px; }
 footer a { color: var(--marfim); }
 footer .interpuncts { color: var(--terracota-2); letter-spacing: .8em;
                       text-indent: .8em; margin: 10px 0 14px; }
