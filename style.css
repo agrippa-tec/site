@@ -234,16 +234,9 @@ p + p { margin-top: 14px; }
 
 /* ---------- o nome ---------- */
 .name-story { position: relative; }
-.name-story blockquote {
-  margin: 28px 0; padding: 26px 30px;
-  border-left: 4px solid var(--terracota);
-  background: var(--marfim); border-radius: 0 var(--r) var(--r) 0;
-  font-family: var(--disp); font-size: 1.25rem; letter-spacing: .08em;
-  color: var(--verde);
-}
-.name-story blockquote small {
-  display: block; margin-top: 8px; font-family: var(--body);
-  font-size: .85rem; letter-spacing: 0; color: var(--muted);
+.name-story .lead b {
+  font-family: var(--disp); font-weight: 400; letter-spacing: .06em;
+  color: var(--terracota);
 }
 
 /* ---------- produto (strabo) ---------- */
