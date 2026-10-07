@@ -10,6 +10,9 @@
 <meta property="og:image" content="https://agrippa.tec.br/assets/strabo-S1-verde.png">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#213E24">
+<link rel="canonical" href="https://agrippa.tec.br/en/strabo/">
+<meta property="og:url" content="https://agrippa.tec.br/en/strabo/">
+<link rel="preload" href="/assets/fonts/OptimusPrincepsSemiBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" href="/assets/strabo-S1-verde.png">
 <link rel="alternate" hreflang="pt-BR" href="https://agrippa.tec.br/strabo/">
@@ -18,20 +21,24 @@
 <link rel="alternate" hreflang="x-default" href="https://agrippa.tec.br/strabo/">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Skip to content</a>
 
 <header>
-  <a href="/en/" aria-label="Agrippa Tec — home"><img class="logo" src="/assets/agrippa-oficial-esc-trim.png" alt="Agrippa Tec"></a>
-  <nav>
+  <a href="/en/" aria-label="Agrippa Tec — home"><img class="logo" src="/assets/agrippa-oficial-esc-trim.png" alt="Agrippa Tec" width="939" height="446" decoding="async"></a>
+  <button class="menu-toggle" type="button" data-menu-toggle data-label-open="Open menu" data-label-close="Close menu" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false"><span>Menu</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6H17M3 14H17"/></svg></button>
+  <nav id="site-nav" aria-label="Main navigation">
     <a href="/en/#produtos">Products</a>
     <a href="/strabo/privacidade/">Privacy</a>
-    <a class="mail" data-u="suporte" data-d="agrippa.tec.br">Support</a>
-    <span class="langs"><a href="/strabo/">PT</a>·<a class="on" href="/en/strabo/">EN</a>·<a href="/es/strabo/">ES</a></span>
+    <a class="mail" href="#contato" data-u="suporte" data-d="agrippa.tec.br">Support</a>
+    <span class="langs"><a href="/strabo/">PT</a>·<a class="on" aria-current="page" href="/en/strabo/">EN</a>·<a href="/es/strabo/">ES</a></span>
   </nav>
 </header>
 
+<main id="conteudo" tabindex="-1">
+
 <section class="prod-hero">
   <div class="inner">
-    <img class="icon" src="/assets/strabo-S1-verde.png" alt="Strabo">
+    <img class="icon" src="/assets/strabo-S1-verde.png" alt="Strabo" width="1024" height="1024" decoding="async">
     <div>
       <h1>STRABO</h1>
       <p class="sub">GeoPDF and offline GPS in the field</p>
@@ -76,12 +83,12 @@
 <div class="wrap">
   <p class="kicker reveal">Screens</p>
   <h2 class="disp reveal">The way it looks in the field</h2>
-  <div class="screens">
-    <img src="/assets/01-biblioteca.png" alt="Map library" loading="lazy">
-    <img src="/assets/02-mapa-gps-satelite.png" alt="Map with GPS and satellite" loading="lazy">
-    <img src="/assets/03-pino-simbolos-fotos.png" alt="Pins with symbols and photos" loading="lazy">
-    <img src="/assets/04-camadas-pdf.png" alt="GeoPDF layers" loading="lazy">
-    <img src="/assets/05-camadas-bases.png" alt="Vector base layers" loading="lazy">
+  <div class="screens" tabindex="0" role="region" aria-label="Strabo screenshots — use the arrow keys to browse">
+    <img src="/assets/01-biblioteca.png" alt="Map library" loading="lazy" width="1284" height="2778" decoding="async">
+    <img src="/assets/02-mapa-gps-satelite.png" alt="Map with GPS and satellite" loading="lazy" width="1284" height="2778" decoding="async">
+    <img src="/assets/03-pino-simbolos-fotos.png" alt="Pins with symbols and photos" loading="lazy" width="1284" height="2778" decoding="async">
+    <img src="/assets/04-camadas-pdf.png" alt="GeoPDF layers" loading="lazy" width="1284" height="2778" decoding="async">
+    <img src="/assets/05-camadas-bases.png" alt="Vector base layers" loading="lazy" width="1284" height="2778" decoding="async">
   </div>
   <div class="note-strip">
     <strong>Works on ordinary phones, with weak signal or none at
@@ -98,35 +105,22 @@
     map: it takes it out of the cabinet and puts it in your pocket —
     where the work happens.</p>
   </div>
-  <p style="margin-top:28px"><a href="/strabo/privacidade/">Privacy
+  <p id="contato" style="margin-top:28px"><a href="/strabo/privacidade/">Privacy
   Policy</a> · Support:
-  <a class="mail" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [at] agrippa.tec.br</a></p>
+  <a class="mail" href="#contato" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [at] agrippa.tec.br</a></p>
 </div>
 </section>
 
+</main>
+
 <footer>
-  <img class="mark" src="/assets/agrippa-oficial-cla-trim.png" alt="Agrippa Tec">
+  <img class="mark" src="/assets/agrippa-oficial-cla-trim.png" alt="Agrippa Tec" width="939" height="446" loading="lazy" decoding="async">
   <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
   <p><strong>Strabo</strong> · an Agrippa Tec product</p>
   <p class="legal">© 2026 Agrippa Tec · Brazil</p>
 </footer>
 
-<script>
-document.documentElement.classList.add('js');
-if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const io = new IntersectionObserver((es) => {
-    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-  }, { threshold: .12 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-} else {
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-}
-document.querySelectorAll('a.mail').forEach(a => {
-  const m = a.dataset.u + '@' + a.dataset.d;
-  a.href = 'mailto:' + m;
-  if ('txt' in a.dataset) a.textContent = m;
-});
-</script>
+<script src="/site.js" defer></script>
 
 </body>
 </html>

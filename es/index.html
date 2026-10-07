@@ -10,6 +10,9 @@
 <meta property="og:image" content="https://agrippa.tec.br/assets/agrippa-tec-oficial-pedra.png">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#213E24">
+<link rel="canonical" href="https://agrippa.tec.br/es/">
+<meta property="og:url" content="https://agrippa.tec.br/es/">
+<link rel="preload" href="/assets/fonts/OptimusPrincepsSemiBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" href="/assets/agrippa-tec-oficial-pedra.png">
 <link rel="alternate" hreflang="pt-BR" href="https://agrippa.tec.br/">
@@ -18,25 +21,71 @@
 <link rel="alternate" hreflang="x-default" href="https://agrippa.tec.br/">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Saltar al contenido</a>
 
 <header>
-  <a href="/es/" aria-label="Agrippa Tec — inicio"><img class="logo" src="/assets/agrippa-oficial-esc-trim.png" alt="Agrippa Tec"></a>
-  <nav>
+  <a href="/es/" aria-label="Agrippa Tec — inicio"><img class="logo" src="/assets/agrippa-oficial-esc-trim.png" alt="Agrippa Tec" width="939" height="446" decoding="async"></a>
+  <button class="menu-toggle" type="button" data-menu-toggle data-label-open="Abrir menú" data-label-close="Cerrar menú" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false"><span>Menú</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6H17M3 14H17"/></svg></button>
+  <nav id="site-nav" aria-label="Navegación principal">
     <a href="#produtos">Productos</a>
     <a href="#empresa">La empresa</a>
-    <a class="mail" data-u="suporte" data-d="agrippa.tec.br">Contacto</a>
-    <span class="langs"><a href="/">PT</a>·<a href="/en/">EN</a>·<a class="on" href="/es/">ES</a></span>
+    <a class="mail" href="#contato" data-u="suporte" data-d="agrippa.tec.br">Contacto</a>
+    <span class="langs"><a href="/">PT</a>·<a href="/en/">EN</a>·<a class="on" aria-current="page" href="/es/">ES</a></span>
   </nav>
 </header>
 
+<main id="conteudo" tabindex="-1">
+
 <section class="hero">
-  <img class="seal" src="/assets/agrippa-oficial-cla-trim.png" alt="AGRIPPA TEC">
-  <h1 class="tagline">Tecnología para el agronegocio</h1>
-  <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
-  <p>Transformamos el sensoramiento remoto, los datos públicos, el
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1 class="tagline">Tecnología para el agronegocio</h1>
+      <p>Transformamos el sensoramiento remoto, los datos públicos, el
   conocimiento de quien trabaja la tierra y el conocimiento
   técnico-científico en respuestas para quien decide.</p>
-  <a class="cta" href="#produtos">Conocer los productos</a>
+      <a class="cta" href="#produtos">Conocer los productos</a>
+    </div>
+    <div class="hero-brand">
+      <img class="seal" src="/assets/agrippa-oficial-cla-trim.png" alt="AGRIPPA TEC" width="939" height="446" fetchpriority="high" decoding="async">
+      <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
+    </div>
+  </div>
+</section>
+
+<section id="produtos" style="background:var(--marfim)">
+<div class="wrap">
+  <p class="kicker reveal">Productos</p>
+  <h2 class="disp reveal">Una pregunta, una respuesta</h2>
+  <div class="cards">
+    <a class="card reveal" href="/es/strabo/">
+      <div class="head">
+        <img src="/assets/strabo-S1-verde.png" alt="Ícono de Strabo" width="1024" height="1024" decoding="async">
+        <div>
+          <h3 style="margin-bottom:0">STRABO</h3>
+          <span style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terracota)">Offline Maps</span>
+        </div>
+      </div>
+      <span class="tag">Próximamente en las tiendas</span>
+      <p>El "dónde estoy en el mapa" de bolsillo. Abre GeoPDF directo
+      desde WhatsApp, muestra tu posición en segundos y funciona 100%
+      offline — pines, mediciones, tracks GPS y exportación profesional.</p>
+      <span class="go">Ver Strabo →</span>
+    </a>
+    <div class="card reveal" style="cursor:default">
+      <div class="head">
+        <img class="free" src="/assets/argos-icon.png" alt="Ícono de Argos" width="633" height="880" decoding="async">
+        <div>
+          <h3 style="margin-bottom:0">ARGOS</h3>
+          <span style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terracota)">Alerta de Quemas</span>
+        </div>
+      </div>
+      <span class="tag">En construcción</span>
+      <p>El vigía que avisa antes de que llegue el fuego. Alertas
+      progresivas por distancia sobre focos de quema cerca de tu área —
+      directo a tu celular.</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section>
@@ -55,42 +104,6 @@
   </div>
   <p class="flow-arrow reveal">Todo eso se convierte en <b>una alerta,
   un informe, un número por lote</b> — sobre un pedazo de tierra real.</p>
-</div>
-</section>
-
-<section id="produtos" style="background:var(--marfim)">
-<div class="wrap">
-  <p class="kicker reveal">Productos</p>
-  <h2 class="disp reveal">Una pregunta, una respuesta</h2>
-  <div class="cards">
-    <a class="card reveal" href="/es/strabo/">
-      <div class="head">
-        <img src="/assets/strabo-S1-verde.png" alt="Ícono de Strabo">
-        <div>
-          <h3 style="margin-bottom:0">STRABO</h3>
-          <span style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terracota)">Offline Maps</span>
-        </div>
-      </div>
-      <span class="tag">Próximamente en las tiendas</span>
-      <p>El "dónde estoy en el mapa" de bolsillo. Abre GeoPDF directo
-      desde WhatsApp, muestra tu posición en segundos y funciona 100%
-      offline — pines, mediciones, tracks GPS y exportación profesional.</p>
-      <span class="go">Ver Strabo →</span>
-    </a>
-    <div class="card reveal" style="cursor:default">
-      <div class="head">
-        <img class="free" src="/assets/argos-icon.png" alt="Ícono de Argos">
-        <div>
-          <h3 style="margin-bottom:0">ARGOS</h3>
-          <span style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terracota)">Alerta de Quemas</span>
-        </div>
-      </div>
-      <span class="tag">En construcción</span>
-      <p>El vigía que avisa antes de que llegue el fuego. Alertas
-      progresivas por distancia sobre focos de quema cerca de tu área —
-      directo a tu celular.</p>
-    </div>
-  </div>
 </div>
 </section>
 
@@ -124,41 +137,28 @@
     <p class="lead reveal">Agripa dio agua gratis a Roma, abrió la red
     de caminos de la Galia, venció la mayor batalla naval de la
     Antigüedad por la logística y resumió el mundo entero en un mapa
-    colgado ante el público: la información dispersa del imperio
-    convirtiéndose en una imagen que cualquiera leía. Él no era de
-    discurso, era de obra. Y firmaba: <b>M·AGRIPPA·FECIT</b>, aún en la
-    fachada del Panteón, bajo la mayor cúpula de hormigón del mundo.</p>
-    <p class="lead reveal">La empresa lleva el nombre porque trabaja
-    como él trabajaba: reúne la información dispersa y la devuelve
+    expuesto al público. No era de discurso, era de obra. Y grababa el
+    nombre en ella: <b>M·AGRIPPA·FECIT</b>, en la fachada del
+    Panteón, bajo la que aún es la mayor cúpula de hormigón del
+    mundo.</p>
+    <p class="lead reveal">El nombre es la regla que la empresa se
+    impuso: ingeniería que reúne la información dispersa y la devuelve
     resumida en una respuesta para quien decide. Con el nombre
     debajo.</p>
   </div>
 </div>
 </section>
 
+</main>
+
 <footer id="contato">
-  <img class="mark" src="/assets/agrippa-oficial-cla-trim.png" alt="Agrippa Tec">
+  <img class="mark" src="/assets/agrippa-oficial-cla-trim.png" alt="Agrippa Tec" width="939" height="446" loading="lazy" decoding="async">
   <div class="interpuncts" aria-hidden="true">▾ ▾ ▾</div>
-  <p>Contacto: <a class="mail" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [arroba] agrippa.tec.br</a></p>
-  <p class="legal">© 2026 Agrippa Tec · Brasil · <a href="/strabo/privacidade/" style="color:#8C8578">Privacidad — Strabo</a></p>
+  <p>Contacto: <a class="mail" href="#contato" data-txt data-u="suporte" data-d="agrippa.tec.br">suporte [arroba] agrippa.tec.br</a></p>
+  <p class="legal">© 2026 Agrippa Tec · Brasil · <a href="/strabo/privacidade/">Privacidad — Strabo</a></p>
 </footer>
 
-<script>
-document.documentElement.classList.add('js');
-if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const io = new IntersectionObserver((es) => {
-    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-  }, { threshold: .12 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-} else {
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
-}
-document.querySelectorAll('a.mail').forEach(a => {
-  const m = a.dataset.u + '@' + a.dataset.d;
-  a.href = 'mailto:' + m;
-  if ('txt' in a.dataset) a.textContent = m;
-});
-</script>
+<script src="/site.js" defer></script>
 
 </body>
 </html>
