@@ -36,7 +36,7 @@
   const progress = document.createElement('div');
   progress.className = 'scroll-progress';
   progress.setAttribute('aria-hidden', 'true');
-  document.body.prepend(progress);
+  (header || document.body).append(progress);
   const onScroll = () => {
     if (header) header.classList.toggle('scrolled', window.scrollY > 8);
     const max = document.documentElement.scrollHeight - window.innerHeight;
