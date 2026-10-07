@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" fill="none">
+  <!-- hemisfério do Panteão em malha — instrumento/dome wireframe -->
+  <g stroke="#F2EBD9" stroke-width="1.1">
+    <path d="M30 400 A370 370 0 0 1 770 400" stroke-opacity=".26"/>
+    <path d="M100 400 A300 300 0 0 1 700 400" stroke-opacity=".15"/>
+    <path d="M170 400 A230 230 0 0 1 630 400" stroke-opacity=".15"/>
+    <path d="M240 400 A160 160 0 0 1 560 400" stroke-opacity=".13"/>
+    <path d="M305 400 A95 95 0 0 1 495 400" stroke-opacity=".11"/>
+    <g stroke-opacity=".12">
+      <path d="M477.3 379.3 L757.4 304.2"/>
+      <path d="M469.3 360 L720.2 215"/>
+      <path d="M456.6 343.4 L661.6 138.4"/>
+      <path d="M440 330.7 L585 79.7"/>
+      <path d="M420.7 322.7 L495.7 42.7"/>
+      <path d="M400 320 L400 30"/>
+      <path d="M379.3 322.7 L304.3 42.7"/>
+      <path d="M360 330.7 L215 79.7"/>
+      <path d="M343.4 343.4 L138.4 138.4"/>
+      <path d="M330.7 360 L79.8 215"/>
+      <path d="M322.7 379.3 L42.6 304.2"/>
+    </g>
+    <path d="M30 400 H770" stroke-opacity=".18"/>
+    <path d="M400 18 V415" stroke-opacity=".10" stroke-dasharray="2 9"/>
+    <path d="M392 30 h16 M400 22 v16" stroke-opacity=".30"/>
+  </g>
+</svg>
