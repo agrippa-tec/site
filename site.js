@@ -30,6 +30,14 @@
     root.classList.add('js');
   }
 
+  // Header shadow once the page scrolls.
+  const header = document.querySelector('header');
+  if (header) {
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
   // Keep the existing anti-scraping contact scheme. Without JS the
   // links reach the readable, obfuscated contact already on the page.
   document.querySelectorAll('a.mail').forEach(link => {
