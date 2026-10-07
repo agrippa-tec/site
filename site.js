@@ -30,13 +30,21 @@
     root.classList.add('js');
   }
 
-  // Header shadow once the page scrolls.
+  // Header shadow once the page scrolls, plus a thin scroll-progress
+  // line across the top of the page.
   const header = document.querySelector('header');
-  if (header) {
-    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  }
+  const progress = document.createElement('div');
+  progress.className = 'scroll-progress';
+  progress.setAttribute('aria-hidden', 'true');
+  document.body.prepend(progress);
+  const onScroll = () => {
+    if (header) header.classList.toggle('scrolled', window.scrollY > 8);
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.transform = 'scaleX(' + (max > 0 ? Math.min(window.scrollY / max, 1) : 0) + ')';
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
 
   // Keep the existing anti-scraping contact scheme. Without JS the
   // links reach the readable, obfuscated contact already on the page.
