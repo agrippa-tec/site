@@ -4,6 +4,7 @@
     <!-- linha de terra e vala lateral -->
     <path d="M50 150 H810" stroke-opacity=".30"/>
     <path d="M50 150 L100 205 L140 205 L180 150" stroke-opacity=".26"/>
+    <path d="M720 150 L755 200 L790 200 L810 150" stroke-opacity=".26"/>
     <!-- corpo da estrada: trapézio levemente abaulado -->
     <path d="M200 145 Q430 128 660 145" stroke-opacity=".40"/>
     <!-- SVMMA CRVSTA — lajes: juntas poligonais -->

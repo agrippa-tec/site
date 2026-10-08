@@ -1,7 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
   <!-- Panteão — elevação em traço de prancheta: fachada + cúpula em malha -->
+  <defs>
+    <mask id="fachada">
+      <rect width="900" height="620" fill="#fff"/>
+      <polygon points="162,216 450,82 738,216" fill="#000"/>
+      <rect x="182" y="202" width="536" height="42" fill="#000"/>
+    </mask>
+  </defs>
   <g stroke="#7A3B24" stroke-width="1.2" stroke-opacity=".30">
-    <!-- cúpula: malha de arcos concêntricos -->
+    <!-- cúpula: malha de arcos concêntricos (oculta atrás da fachada) -->
+    <g mask="url(#fachada)">
     <path d="M200 320 A250 250 0 0 1 700 320" stroke-opacity=".34"/>
     <path d="M245 320 A205 205 0 0 1 655 320" stroke-opacity=".17"/>
     <path d="M290 320 A160 160 0 0 1 610 320" stroke-opacity=".17"/>
@@ -19,6 +27,7 @@
       <path d="M410.4 280.4 L273.2 143.2"/>
       <path d="M401.5 292 L233.5 195"/>
       <path d="M395.9 305.5 L208.5 255.3"/>
+    </g>
     </g>
     <!-- tambor da rotunda -->
     <path d="M200 320 V470 M700 320 V470" stroke-opacity=".20"/>

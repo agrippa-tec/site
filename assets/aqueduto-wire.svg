@@ -12,10 +12,10 @@
     <path d="M170 250 A80 80 0 0 1 330 250" stroke-opacity=".42"/>
     <path d="M380 250 A80 80 0 0 1 540 250" stroke-opacity=".42"/>
     <path d="M590 250 A80 80 0 0 1 750 250" stroke-opacity=".42"/>
-    <!-- cunhas do arco central -->
-    <g stroke-opacity=".22">
-      <path d="M460 170 V250 M440 173 L453 250 M420 183 L446 252 M402 199 L440 255 M390 219 L435 260"/>
-      <path d="M460 170 L480 250 M480 173 L467 250 M500 183 L474 252 M518 199 L480 255 M530 219 L485 260"/>
+    <!-- cunhas do arco central: juntas radiais só no anel do arco -->
+    <g stroke-opacity=".30">
+      <path d="M537.3 229.3 L521.8 233.4 M529.3 210 L515.4 218 M516.6 193.4 L505.2 204.7 M500 180.7 L492 194.6 M480.7 172.7 L476.6 188.2"/>
+      <path d="M439.3 172.7 L443.4 188.2 M420 180.7 L428 194.6 M403.4 193.4 L414.8 204.7 M390.7 210 L404.6 218 M382.7 229.3 L398.2 233.4"/>
     </g>
     <!-- face superior da arcada -->
     <path d="M100 250 H840" stroke-opacity=".30"/>

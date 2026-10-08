@@ -19,6 +19,9 @@
       <path d="M330.7 360 L79.8 215"/>
       <path d="M322.7 379.3 L42.6 304.2"/>
     </g>
+    <!-- óculo: o anel do Panteão no ápice -->
+    <ellipse cx="400" cy="34" rx="26" ry="15" stroke-opacity=".34"/>
+    <ellipse cx="400" cy="34" rx="13" ry="7" stroke-opacity=".22"/>
     <path d="M30 400 H770" stroke-opacity=".18"/>
     <path d="M400 18 V415" stroke-opacity=".10" stroke-dasharray="2 9"/>
     <path d="M392 30 h16 M400 22 v16" stroke-opacity=".30"/>
