@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
+  <!-- Panteão — elevação em traço de prancheta: fachada + cúpula em malha -->
+  <g stroke="#6B4A33" stroke-width="1.2" stroke-opacity=".30">
+    <!-- cúpula: malha de arcos concêntricos -->
+    <path d="M200 320 A250 250 0 0 1 700 320" stroke-opacity=".34"/>
+    <path d="M245 320 A205 205 0 0 1 655 320" stroke-opacity=".17"/>
+    <path d="M290 320 A160 160 0 0 1 610 320" stroke-opacity=".17"/>
+    <path d="M335 320 A115 115 0 0 1 565 320" stroke-opacity=".15"/>
+    <!-- raios da malha -->
+    <g stroke-opacity=".13">
+      <path d="M504.1 305.5 L691.5 255.3"/>
+      <path d="M498.5 292 L666.5 195"/>
+      <path d="M489.6 280.4 L626.8 143.2"/>
+      <path d="M478 271.5 L575 103.5"/>
+      <path d="M464.5 265.9 L514.7 78.5"/>
+      <path d="M450 264 L450 70"/>
+      <path d="M435.5 265.9 L385.3 78.5"/>
+      <path d="M422 271.5 L325 103.5"/>
+      <path d="M410.4 280.4 L273.2 143.2"/>
+      <path d="M401.5 292 L233.5 195"/>
+      <path d="M395.9 305.5 L208.5 255.3"/>
+    </g>
+    <!-- tambor da rotunda -->
+    <path d="M200 320 V470 M700 320 V470" stroke-opacity=".20"/>
+    <!-- eixo de simetria -->
+    <path d="M450 40 V520" stroke-opacity=".14" stroke-dasharray="2 9"/>
+    <!-- frontão -->
+    <path d="M170 210 L450 92 L730 210 Z" stroke-opacity=".40"/>
+    <path d="M203 200 L450 106 L697 200 Z" stroke-opacity=".22"/>
+    <!-- arquitrave -->
+    <path d="M190 210 H710 M190 224 H710 M190 238 H710" stroke-opacity=".38"/>
+    <!-- 8 colunas -->
+    <g stroke-opacity=".36">
+      <path d="M200 232 h30 v14 h-30 z M206 246 v190 M224 246 v190 M201 436 h28 v8 h-28 z"/>
+      <path d="M267 232 h30 v14 h-30 z M273 246 v190 M291 246 v190 M268 436 h28 v8 h-28 z"/>
+      <path d="M334 232 h30 v14 h-30 z M340 246 v190 M358 246 v190 M335 436 h28 v8 h-28 z"/>
+      <path d="M401 232 h30 v14 h-30 z M407 246 v190 M425 246 v190 M402 436 h28 v8 h-28 z"/>
+      <path d="M469 232 h30 v14 h-30 z M475 246 v190 M493 246 v190 M470 436 h28 v8 h-28 z"/>
+      <path d="M536 232 h30 v14 h-30 z M542 246 v190 M560 246 v190 M537 436 h28 v8 h-28 z"/>
+      <path d="M603 232 h30 v14 h-30 z M609 246 v190 M627 246 v190 M604 436 h28 v8 h-28 z"/>
+      <path d="M670 232 h30 v14 h-30 z M676 246 v190 M694 246 v190 M671 436 h28 v8 h-28 z"/>
+    </g>
+    <!-- degraus e linha de terra -->
+    <path d="M170 444 H730 M160 454 H740 M150 464 H750 M140 474 H760" stroke-opacity=".32"/>
+    <path d="M110 484 H790" stroke-opacity=".30"/>
+    <!-- marcas de registro -->
+    <g stroke-opacity=".28">
+      <path d="M52 60 h16 M60 52 v16"/>
+      <path d="M832 60 h16 M840 52 v16"/>
+      <path d="M52 560 h16 M60 552 v16"/>
+      <path d="M832 560 h16 M840 552 v16"/>
+    </g>
+  </g>
+  <!-- inscrição na arquitrave + cota do vão da cúpula -->
+  <text x="450" y="228" text-anchor="middle" font-family="ui-monospace, Consolas, monospace"
+        font-size="14" letter-spacing="5" fill="#BA5C3A" fill-opacity=".55">M·AGRIPPA·FECIT</text>
+  <g stroke="#BA5C3A" stroke-width="1.1" stroke-opacity=".45">
+    <path d="M200 490 V518 M700 490 V518"/>
+    <path d="M200 512 H700"/>
+    <path d="M200 504 V520 M700 504 V520"/>
+  </g>
+  <text x="450" y="540" text-anchor="middle" font-family="ui-monospace, Consolas, monospace"
+        font-size="17" letter-spacing="3" fill="#BA5C3A" fill-opacity=".5">43,3 M</text>
+</svg>

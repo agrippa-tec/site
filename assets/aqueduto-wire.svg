@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" fill="none">
+  <!-- Aqueduto — elevação em traço de prancheta: arcada + specus -->
+  <g stroke="#6B4A33" stroke-width="1.2" stroke-opacity=".32">
+    <!-- linha de terra -->
+    <path d="M60 400 H840" stroke-opacity=".34"/>
+    <path d="M60 412 H840" stroke-opacity=".16" stroke-dasharray="3 8"/>
+    <!-- arcada: 4 pilares, 3 arcos -->
+    <path d="M120 250 V400 M170 250 V400" stroke-opacity=".38"/>
+    <path d="M330 250 V400 M380 250 V400" stroke-opacity=".38"/>
+    <path d="M540 250 V400 M590 250 V400" stroke-opacity=".38"/>
+    <path d="M750 250 V400 M800 250 V400" stroke-opacity=".38"/>
+    <path d="M170 250 A80 80 0 0 1 330 250" stroke-opacity=".42"/>
+    <path d="M380 250 A80 80 0 0 1 540 250" stroke-opacity=".42"/>
+    <path d="M590 250 A80 80 0 0 1 750 250" stroke-opacity=".42"/>
+    <!-- cunhas do arco central -->
+    <g stroke-opacity=".22">
+      <path d="M460 170 V250 M440 173 L453 250 M420 183 L446 252 M402 199 L440 255 M390 219 L435 260"/>
+      <path d="M460 170 L480 250 M480 173 L467 250 M500 183 L474 252 M518 199 L480 255 M530 219 L485 260"/>
+    </g>
+    <!-- face superior da arcada -->
+    <path d="M100 250 H840" stroke-opacity=".30"/>
+    <path d="M100 170 H840" stroke-opacity=".30"/>
+    <path d="M120 170 V250 M840 170 V250 M170 170 V172 M330 170 V172 M540 170 V172 M750 170 V172" stroke-opacity=".20"/>
+    <!-- specus: canal de água no topo -->
+    <path d="M100 140 H840 M100 170 H840" stroke-opacity=".34"/>
+    <path d="M100 140 V120 M840 140 V120 M100 120 H840" stroke-opacity=".30"/>
+    <path d="M110 132 Q140 127 170 132 T230 132 T290 132 T350 132 T410 132 T470 132 T530 132 T590 132 T650 132 T710 132 T770 132 T830 132" stroke-opacity=".26"/>
+    <!-- eixos tracejados -->
+    <path d="M460 90 V430" stroke-opacity=".16" stroke-dasharray="2 9"/>
+    <path d="M60 250 H840" stroke-opacity=".12" stroke-dasharray="2 9"/>
+    <!-- marcas de registro -->
+    <g stroke-opacity=".28">
+      <path d="M52 52 h16 M60 44 v16"/>
+      <path d="M832 52 h16 M840 44 v16"/>
+      <path d="M52 452 h16 M60 444 v16"/>
+      <path d="M832 452 h16 M840 444 v16"/>
+    </g>
+  </g>
+  <!-- cotas e anotações -->
+  <g stroke="#BA5C3A" stroke-width="1.1" stroke-opacity=".5">
+    <path d="M860 140 V400 M854 140 H866 M854 400 H866"/>
+    <path d="M100 96 V120 M840 96 V120 M100 104 H840" stroke-dasharray="8 6" stroke-opacity=".35"/>
+  </g>
+  <text x="470" y="86" text-anchor="middle" font-family="ui-monospace, Consolas, monospace"
+        font-size="15" letter-spacing="5" fill="#BA5C3A" fill-opacity=".6">AQVA VIRGO · XIX A.C.</text>
+  <text x="874" y="278" font-family="ui-monospace, Consolas, monospace"
+        font-size="14" letter-spacing="2" fill="#BA5C3A" fill-opacity=".55"
+        transform="rotate(90 874 278)">ALTITVDO</text>
+  <text x="200" y="158" font-family="ui-monospace, Consolas, monospace"
+        font-size="13" letter-spacing="3" fill="#BA5C3A" fill-opacity=".5">SPECVS</text>
+</svg>

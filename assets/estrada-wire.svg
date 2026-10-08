@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" fill="none">
+  <!-- Estrada romana — corte em traço de prancheta: camadas da via -->
+  <g stroke="#6B4A33" stroke-width="1.2" stroke-opacity=".32">
+    <!-- linha de terra e vala lateral -->
+    <path d="M50 150 H810" stroke-opacity=".30"/>
+    <path d="M50 150 L100 205 L140 205 L180 150" stroke-opacity=".26"/>
+    <!-- corpo da estrada: trapézio levemente abaulado -->
+    <path d="M200 145 Q430 128 660 145" stroke-opacity=".40"/>
+    <!-- SVMMA CRVSTA — lajes: juntas poligonais -->
+    <path d="M200 145 L210 188 M280 141 L272 188 M360 137 L366 188 M445 136 L445 188 M530 138 L522 188 M610 141 L618 188 M660 145 L650 188" stroke-opacity=".30"/>
+    <path d="M190 190 Q430 176 670 190" stroke-opacity=".34"/>
+    <!-- NVCLEVS — camada compacta -->
+    <path d="M196 232 Q430 220 664 232" stroke-opacity=".30"/>
+    <g stroke-opacity=".24">
+      <path d="M230 196 v22 M280 193 v24 M340 191 v24 M400 190 v24 M460 190 v24 M520 191 v24 M580 193 v24 M630 196 v22"/>
+    </g>
+    <!-- RVDVS — entulho: pedras miúdas -->
+    <g stroke-opacity=".26">
+      <path d="M225 258 l14 -8 l12 9 z M285 262 l12 -9 l14 8 z M345 256 l13 -8 l13 9 z M405 260 l14 -8 l12 9 z M465 257 l12 -8 l14 9 z M525 261 l13 -8 l12 8 z M585 258 l14 -9 l12 9 z M255 272 l12 -8 l13 8 z M315 274 l13 -8 l13 9 z M375 270 l12 -8 l14 9 z M435 274 l14 -8 l12 8 z M495 271 l12 -8 l14 9 z M555 273 l13 -8 l13 9 z"/>
+    </g>
+    <path d="M202 280 Q430 268 658 280" stroke-opacity=".30"/>
+    <!-- STATVMEN — pedras grandes do embasamento -->
+    <g stroke-opacity=".34">
+      <path d="M210 282 L240 340 L285 340 L275 282 Z"/>
+      <path d="M285 282 L300 340 L355 340 L345 281 Z"/>
+      <path d="M355 281 L375 340 L430 340 L420 279 Z"/>
+      <path d="M430 279 L455 340 L510 340 L495 280 Z"/>
+      <path d="M510 280 L530 340 L585 340 L575 281 Z"/>
+      <path d="M585 281 L600 340 L650 340 L645 282 Z"/>
+    </g>
+    <path d="M215 342 H645" stroke-opacity=".30"/>
+    <path d="M200 355 H660" stroke-opacity=".16" stroke-dasharray="3 8"/>
+    <!-- eixo de simetria -->
+    <path d="M430 110 V380" stroke-opacity=".16" stroke-dasharray="2 9"/>
+    <!-- marcas de registro -->
+    <g stroke-opacity=".28">
+      <path d="M52 52 h16 M60 44 v16"/>
+      <path d="M792 52 h16 M800 44 v16"/>
+      <path d="M52 368 h16 M60 360 v16"/>
+      <path d="M792 368 h16 M800 360 v16"/>
+    </g>
+  </g>
+  <!-- legendas com linhas de chamada -->
+  <g stroke="#BA5C3A" stroke-width="1" stroke-opacity=".5">
+    <path d="M700 152 L668 162"/>
+    <path d="M706 214 L670 212"/>
+    <path d="M706 258 L662 266"/>
+    <path d="M706 322 L652 316"/>
+    <path d="M120 116 V86 M740 116 V86 M120 94 H740" stroke-dasharray="8 6" stroke-opacity=".4"/>
+  </g>
+  <g font-family="ui-monospace, Consolas, monospace" fill="#BA5C3A" fill-opacity=".6">
+    <text x="706" y="156" font-size="13" letter-spacing="3">SVMMA CRVSTA</text>
+    <text x="712" y="218" font-size="13" letter-spacing="3">NVCLEVS</text>
+    <text x="712" y="262" font-size="13" letter-spacing="3">RVDVS</text>
+    <text x="712" y="326" font-size="13" letter-spacing="3">STATVMEN</text>
+    <text x="430" y="76" text-anchor="middle" font-size="15" letter-spacing="5">VIA · CIRCA 5 M</text>
+  </g>
+</svg>
