@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" fill="none">
   <!-- Aqueduto — elevação em traço de prancheta: arcada + specus -->
-  <g stroke="#7A3B24" stroke-width="1.2" stroke-opacity=".32">
+  <g stroke="#F2EBD9" stroke-width="1.2" stroke-opacity=".32">
     <!-- linha de terra -->
     <path d="M60 400 H840" stroke-opacity=".34"/>
     <path d="M60 412 H840" stroke-opacity=".16" stroke-dasharray="3 8"/>
@@ -37,15 +37,15 @@
     </g>
   </g>
   <!-- cotas e anotações -->
-  <g stroke="#BA5C3A" stroke-width="1.1" stroke-opacity=".5">
+  <g stroke="#E79E82" stroke-width="1.1" stroke-opacity=".5">
     <path d="M860 140 V400 M854 140 H866 M854 400 H866"/>
     <path d="M100 96 V120 M840 96 V120 M100 104 H840" stroke-dasharray="8 6" stroke-opacity=".35"/>
   </g>
   <text x="470" y="86" text-anchor="middle" font-family="ui-monospace, Consolas, monospace"
-        font-size="15" letter-spacing="5" fill="#BA5C3A" fill-opacity=".6">AQVA VIRGO · XIX A.C.</text>
+        font-size="15" letter-spacing="5" fill="#E79E82" fill-opacity=".6">AQVA VIRGO · XIX A.C.</text>
   <text x="874" y="278" font-family="ui-monospace, Consolas, monospace"
-        font-size="14" letter-spacing="2" fill="#BA5C3A" fill-opacity=".55"
+        font-size="14" letter-spacing="2" fill="#E79E82" fill-opacity=".55"
         transform="rotate(90 874 278)">ALTITVDO</text>
   <text x="200" y="158" font-family="ui-monospace, Consolas, monospace"
-        font-size="13" letter-spacing="3" fill="#BA5C3A" fill-opacity=".5">SPECVS</text>
+        font-size="13" letter-spacing="3" fill="#E79E82" fill-opacity=".5">SPECVS</text>
 </svg>

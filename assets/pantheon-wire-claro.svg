@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" fill="none">
   <!-- Panteão — elevação em traço de prancheta: fachada + cúpula em malha -->
-  <g stroke="#6B4A33" stroke-width="1.2" stroke-opacity=".30">
+  <g stroke="#7A3B24" stroke-width="1.2" stroke-opacity=".30">
     <!-- cúpula: malha de arcos concêntricos -->
     <path d="M200 320 A250 250 0 0 1 700 320" stroke-opacity=".34"/>
     <path d="M245 320 A205 205 0 0 1 655 320" stroke-opacity=".17"/>

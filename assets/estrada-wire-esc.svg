@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" fill="none">
   <!-- Estrada romana — corte em traço de prancheta: camadas da via -->
-  <g stroke="#7A3B24" stroke-width="1.2" stroke-opacity=".32">
+  <g stroke="#F2EBD9" stroke-width="1.2" stroke-opacity=".32">
     <!-- linha de terra e vala lateral -->
     <path d="M50 150 H810" stroke-opacity=".30"/>
     <path d="M50 150 L100 205 L140 205 L180 150" stroke-opacity=".26"/>
@@ -41,14 +41,14 @@
     </g>
   </g>
   <!-- legendas com linhas de chamada -->
-  <g stroke="#BA5C3A" stroke-width="1" stroke-opacity=".5">
+  <g stroke="#E79E82" stroke-width="1" stroke-opacity=".5">
     <path d="M700 152 L668 162"/>
     <path d="M706 214 L670 212"/>
     <path d="M706 258 L662 266"/>
     <path d="M706 322 L652 316"/>
     <path d="M120 116 V86 M740 116 V86 M120 94 H740" stroke-dasharray="8 6" stroke-opacity=".4"/>
   </g>
-  <g font-family="ui-monospace, Consolas, monospace" fill="#BA5C3A" fill-opacity=".6">
+  <g font-family="ui-monospace, Consolas, monospace" fill="#E79E82" fill-opacity=".6">
     <text x="706" y="156" font-size="13" letter-spacing="3">SVMMA CRVSTA</text>
     <text x="712" y="218" font-size="13" letter-spacing="3">NVCLEVS</text>
     <text x="712" y="262" font-size="13" letter-spacing="3">RVDVS</text>
