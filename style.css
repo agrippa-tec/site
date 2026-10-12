@@ -84,7 +84,10 @@ header.scrolled {
   box-shadow: 0 16px 40px rgba(90,60,35,.20);
   border-color: rgba(90,62,40,.24);
 }
-header img.logo { height: 42px; width: auto; display: block; transform: translateY(3px); }
+header img.logo { height: 42px; width: auto; display: block; transform: translateY(3px);
+                  transition: opacity .3s ease, visibility .3s ease; }
+/* home: o selo do hero já assina — a logo do header só entra ao rolar */
+html.js body:has(.hero) header:not(.scrolled) img.logo { opacity: 0; visibility: hidden; }
 nav { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
 nav a {
   color: var(--marfim); text-decoration: none;
@@ -254,6 +257,10 @@ p + p { margin-top: 14px; }
 .sources .src b { display: block; color: var(--marfim); margin-bottom: 8px; font-size: 1.05rem; }
 .sources .src span { font-size: 1rem; color: var(--txt); }
 .sources .src i { display: none; }
+@media (min-width: 980px) {
+  .sources { grid-template-columns: repeat(4, minmax(0,1fr)); gap: 0 28px; }
+  .sources .src { padding: 26px 34px 0 0; }
+}
 .flow-arrow { margin: 30px 0 0; color: var(--muted); font-size: 1.05rem; max-width: 72ch; }
 .flow-arrow b { color: var(--marfim); }
 
@@ -274,13 +281,18 @@ p + p { margin-top: 14px; }
   background: linear-gradient(90deg, var(--terracota), var(--terracota-2));
   opacity: 0; transition: opacity .25s ease;
 }
-a.card:hover {
+.card:not(.soon):hover {
   transform: translateY(-6px);
   border-color: rgba(186,92,58,.45);
   box-shadow: 0 24px 60px rgba(90,60,35,.22), 0 0 40px rgba(186,92,58,.10);
 }
-a.card:hover::before { opacity: 1; }
+.card:not(.soon):hover::before { opacity: 1; }
+/* produto ainda não lançado: contorno tracejado, sem volume — "em obra" de propósito */
+.card.soon { background: transparent; border: 1.5px dashed rgba(186,92,58,.42); box-shadow: none; }
+.card.soon p { font-style: italic; color: var(--muted); }
 .card .head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+.card .head .sub { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .1em;
+                   text-transform: uppercase; color: var(--terracota); }
 .card .head img { width: 68px; height: 68px; border-radius: 15px;
                   object-fit: cover;
                   border: 1.5px solid rgba(122,59,36,.45); background: rgba(186,92,58,.06);
@@ -353,7 +365,7 @@ a.card:hover .go { text-decoration: underline; }
 .principles div { font-size: .97rem; }
 
 /* ---------- pranchas de engenharia — sketches de Agrippa ---------- */
-.plate { max-width: 800px; margin: 64px auto 0; text-align: center; }
+.plate { max-width: 660px; margin: 44px auto 0; text-align: center; }
 .plate img { width: 100%; height: auto; opacity: .95;
              animation: sketch-drift 11s ease-in-out infinite alternate; }
 @keyframes sketch-drift {
@@ -390,6 +402,22 @@ a.card:hover .go { text-decoration: underline; }
   font-family: var(--disp); font-weight: 400; letter-spacing: .06em;
   color: var(--terracota-2);
 }
+/* home: a laje do nome em pedra escura — o único bloco de contraste da página */
+#empresa .name-story {
+  background:
+    radial-gradient(700px 320px at 85% -80px, rgba(208,121,90,.24), transparent 65%),
+    linear-gradient(160deg, #3B2919 0%, #2A1C13 100%);
+  border-color: rgba(242,235,217,.08);
+  color: #F2EBD9;
+  box-shadow: 0 30px 80px rgba(60,35,20,.35), inset 0 1px 0 rgba(255,255,255,.06);
+}
+#empresa .name-story::before { opacity: .25; }
+#empresa .name-story h2.disp { color: #F2EBD9; }
+#empresa .name-story .lead { color: rgba(242,235,217,.82); }
+#empresa .name-story em { color: #E79E82; }
+#empresa .name-story .kicker { color: #E79E82; }
+#empresa .name-story .kicker::before { color: rgba(242,235,217,.45); }
+#empresa .name-story .kicker::after { background: rgba(242,235,217,.14); }
 
 /* ---------- produto (strabo) ---------- */
 .prod-hero {
