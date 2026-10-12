@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Teste o Strabo — Agrippa Tec</title>
-<meta name="description" content="Strabo em teste aberto: entre pelo TestFlight no iPhone ou peça o acesso do Google Play pelo WhatsApp.">
+<title>Baixe o Strabo — Agrippa Tec</title>
+<meta name="description" content="Strabo já no Google Play para Android — e em teste aberto no iPhone pelo TestFlight. Mapas offline para o campo.">
 <meta name="theme-color" content="#BA5C3A">
-<meta property="og:title" content="Teste o Strabo — Agrippa Tec">
-<meta property="og:description" content="Mapas offline para o campo: em fase de teste, fora das lojas. Entre pelo TestFlight ou peça pelo WhatsApp.">
+<meta property="og:title" content="Baixe o Strabo — Agrippa Tec">
+<meta property="og:description" content="Mapas offline para o campo: já no Google Play; no iPhone, teste aberto pelo TestFlight.">
 <meta property="og:image" content="https://agrippa.tec.br/assets/agrippa-tec-oficial-pedra.png">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://agrippa.tec.br/teste/">
@@ -92,42 +92,45 @@ footer a{color:var(--terra);text-decoration:none}
 <main>
   <img class="selo" src="/assets/agrippa-oficial-terra-trim.png" alt="" width="939" height="446">
   <p class="kicker">Strabo · Offline Maps</p>
-  <h1>Teste aberto</h1>
-  <p class="lede">O Strabo está em fase de teste, <b>antes de chegar às lojas</b>.
-  Quem entrar agora usa primeiro e ajuda a moldar o produto.
-  Escolha sua plataforma:</p>
+  <h1>Baixe o Strabo</h1>
+  <p class="lede">Mapas offline pra quem trabalha no campo: abre o GeoPDF,
+  mostra onde você está e funciona sem sinal. <b>Já no Google Play</b> —
+  no iPhone, teste aberto pelo TestFlight.</p>
 
   <div class="plats">
-    <div class="plat">
+    <div class="plat" id="plat-android">
+      <span class="os">Android</span>
+      <h2>Google Play</h2>
+      <p>Disponível na loja: toque, instale e use — sem cadastro,
+      sem conta, sem propaganda.</p>
+      <a class="btn main" href="https://play.google.com/store/apps/details?id=com.agrippatec.strabo"
+      target="_blank" rel="noopener">Instalar no Google Play</a>
+    </div>
+    <div class="plat" id="plat-ios">
       <span class="os">iPhone · iOS</span>
       <h2>TestFlight</h2>
-      <p>Teste aberto pela plataforma oficial da Apple: toque no link, instale o
-      TestFlight e o Strabo entra direto no aparelho.</p>
+      <p>No iPhone o Strabo está em <b>teste aberto</b>: toque no link,
+      instale o TestFlight e o app entra direto no aparelho.</p>
       <a class="btn main" href="https://testflight.apple.com/join/FAjWw9sq"
       target="_blank" rel="noopener">Entrar pelo TestFlight</a>
     </div>
-    <div class="plat">
-      <span class="os">Android</span>
-      <h2>Google Play</h2>
-      <p>Teste fechado do Play: mande o <b>Gmail da sua conta Google</b> pelo
-      WhatsApp que a gente te adiciona na lista de testadores.</p>
-      <a class="btn main" href="https://wa.me/5565992883360?text=Oi%21%20Quero%20testar%20o%20Strabo%20no%20Android.%20Meu%20Gmail%20da%20Play%20Store%20%C3%A9%3A%20"
-      target="_blank" rel="noopener">Pedir acesso no WhatsApp</a>
-    </div>
-  </div>
-
-  <div class="passos">
-    <h3>Como funciona no Android</h3>
-    <ol>
-      <li>Toque no botão — abre o WhatsApp com a mensagem pronta.</li>
-      <li><b>Complete com seu Gmail</b> (o e-mail da conta da Play Store) e envie.</li>
-      <li>A gente te adiciona na lista e te devolve o link do teste.</li>
-      <li>Aceite o convite no Google Play e instale o Strabo.</li>
-    </ol>
   </div>
 
   <p class="volta"><a href="/">← Voltar para o site</a></p>
 </main>
+
+<script>
+// Plataforma do visitante primeiro no grid (gente preguiçosa não
+// precisa nem ler o outro cartão)
+(function(){
+  var ua = navigator.userAgent || '';
+  var ios = /iPhone|iPad|iPod/i.test(ua);
+  var grid = document.querySelector('.plats');
+  var and = document.getElementById('plat-android');
+  var io = document.getElementById('plat-ios');
+  if (ios && and && io) grid.insertBefore(io, and);
+})();
+</script>
 
 <footer>
   © 2026 AGRIPPA TEC · <a href="https://www.instagram.com/agrippatec" target="_blank" rel="noopener">INSTAGRAM</a> · <a href="https://x.com/agrippatec" target="_blank" rel="noopener">X</a> · <a href="https://www.linkedin.com/company/agrippa-tec" target="_blank" rel="noopener">LINKEDIN</a>
